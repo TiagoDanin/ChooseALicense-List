@@ -1,0 +1,3 @@
+[submodule "choosealicense"]
+	path = choosealicense
+	url = https://github.com/github/choosealicense.com.git
