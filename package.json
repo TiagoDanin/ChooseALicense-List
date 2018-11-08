@@ -1,0 +1,33 @@
+{
+  "name": "choosealicense-list",
+  "version": "1.0.0",
+  "description": "List of licenses from choosealicense.com",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "js-yaml": "3.12.0"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TiagoDanin/ChooseALicense-List.git"
+  },
+  "keywords": [
+      "license",
+      "licenses",
+      "mit",
+      "list",
+      "open source",
+      "choosealicense",
+      "spdx"
+  ],
+  "author": "TiagoDanin <TiagoDanin@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TiagoDanin/ChooseALicense-List/issues"
+  },
+  "homepage": "https://github.com/TiagoDanin/ChooseALicense-List#readme"
+}
