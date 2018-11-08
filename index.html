@@ -5,14 +5,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="description" content="[WIP] List of licenses from choosealicense.com by Tiago Danin.">
+	<meta name="description" content="List of licenses from choosealicense.com by Tiago Danin.">
 	<meta name="keywords" content="tiago, danin, tiagodanin, tiagoedge, ChooseALicense-List">
 	<meta name="author" content="TiagoDanin">
 
 	<meta property="og:title" content="TiagoDanin">
 	<meta property="og:url" content="https://tiagodanin.github.io/ChooseALicense-List">
 	<meta property="og:site_name" content="ChooseALicense-List">
-	<meta property="og:description" content="[WIP] List of licenses from choosealicense.com by Tiago Danin.">
+	<meta property="og:description" content="List of licenses from choosealicense.com by Tiago Danin.">
 	<meta name="twitter:title" content="ChooseALicense-List">
 	<meta name="twitter:url" content="https://tiagodanin.github.io/ChooseALicense-List">
 
@@ -66,7 +66,7 @@
 		<div class="uk-card uk-card-body uk-card-primary">
 			<h3 class="uk-card-title">About</h3>
 			<div class="uk-panel">
-				<p>[WIP] List of licenses from choosealicense.com by Tiago Danin.</p>
+				<p>List of licenses from choosealicense.com by Tiago Danin.</p>
 			</div>
 		</div>
 		<hr class="uk-divider-icon">
@@ -74,7 +74,7 @@
 
 	<!--
 title: ChooseALicense-List
-description: [WIP] List of licenses from choosealicense.com by Tiago Danin.
+description: List of licenses from choosealicense.com by Tiago Danin.
 cubohub: true
 baseURL: https://tiagodanin.github.io
 -->
@@ -91,6 +91,59 @@ or
 <a href="https://yarnpkg.com/en/"><code>yarn</code></a>
 command line tools.</p>
 <pre><code class="hljs language-sh">npm install choosealicense-list --save</code></pre>
+<h2 id="how-to-use"><a href="#how-to-use">How to Use</a></h2>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">const</span> choosealicenseList = <span class="hljs-built_in">require</span>(<span class="hljs-string">'choosealicense-list'</span>)
+
+<span class="hljs-comment">//choosealicenseList['spdx-id'] or choosealicense.find('spdx-id')</span>
+choosealicenseList.MIT
+<span class="hljs-comment">/*
+-> {
+	title: 'MIT License',
+	id: 'MIT',
+	description: 'A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.',
+	using: [{
+		Babel: 'https://github.com/babel/babel/blob/master/LICENSE'
+	}, {
+		'.NET Core': 'https://github.com/dotnet/corefx/blob/master/LICENSE.TXT'
+	}, {
+		Rails: 'https://github.com/rails/rails/blob/master/MIT-LICENSE'
+	}],
+	permissions: ['commercial-use',
+		'modifications',
+		'distribution',
+		'private-use'
+	],
+	conditions: ['include-copyright'],
+	limitations: ['liability', 'warranty'],
+	featured: true,
+	hidden: false,
+	nickname: null,
+	note: '',
+	redirect_from: '',
+	urls: {
+		github: 'https://api.github.com/licenses/MIT',
+		choosealicense: 'https://choosealicense.com/licenses/MIT',
+		opensource: 'https://www.opensource.org/licenses/MIT'
+	},
+	'spdx-id': 'MIT',
+	how: 'Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.',
+	body: 'MIT License\n\nCopyright (c) [year] [fullname]\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the "Software"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n'
+}
+*/</span>
+
+choosealicenseList.data
+<span class="hljs-comment">/*
+> [fields, meta, rules]
+*/</span>
+
+choosealicenseList.data.rules.permissions[<span class="hljs-number">1</span>]
+<span class="hljs-comment">/*
+-> {
+	description: 'This software may be modified.',
+	label: 'Modification',
+	tag: 'modifications'
+}
+*/</span></code></pre>
 <h2 id="dev-dependencies"><a href="#dev-dependencies">Dev Dependencies</a></h2>
 <ul>
 <li><a href="https://ghub.io/js-yaml">js-yaml</a>: YAML 1.2 parser and serializer</li>
@@ -119,7 +172,7 @@ command line tools.</p>
 		<div>
 			<div class="uk-card uk-card-default uk-card-hover uk-card-body">
 				<h3 class="uk-card-title"><span uk-icon="star"></span></h3>
-				<p>0</p>
+				<p>1</p>
 			</div>
 		</div>
 	</div>
