@@ -1,0 +1,187 @@
+{
+	"fields": [
+		{
+			"name": "fullname",
+			"description": "The full name or username of the repository owner"
+		},
+		{
+			"name": "login",
+			"description": "The repository owner's username"
+		},
+		{
+			"name": "email",
+			"description": "The repository owner's primary email address"
+		},
+		{
+			"name": "project",
+			"description": "The repository name"
+		},
+		{
+			"name": "description",
+			"description": "The description of the repository"
+		},
+		{
+			"name": "year",
+			"description": "The current year"
+		},
+		{
+			"name": "projecturl",
+			"description": "The repository URL or other project website"
+		}
+	],
+	"meta": [
+		{
+			"name": "title",
+			"description": "The license full name specified by https://spdx.org/licenses/",
+			"required": true
+		},
+		{
+			"name": "spdx-id",
+			"description": "Short identifier specified by https://spdx.org/licenses/",
+			"required": true
+		},
+		{
+			"name": "description",
+			"description": "A human-readable description of the license",
+			"required": true
+		},
+		{
+			"name": "how",
+			"description": "Instructions on how to implement the license",
+			"required": true
+		},
+		{
+			"name": "conditions",
+			"description": "Bulleted list of required rules",
+			"required": true
+		},
+		{
+			"name": "permissions",
+			"description": "Bulleted list of permitted rules",
+			"required": true
+		},
+		{
+			"name": "limitations",
+			"description": "Bulleted list of limited rules",
+			"required": true
+		},
+		{
+			"name": "using",
+			"description": "A list of 3 notable projects using the license with straightforward LICENSE files which serve as examples newcomers can follow and that can be detected by [licensee](https://github.com/benbalter/licensee) in the form of `project_name: license_file_url`",
+			"required": true
+		},
+		{
+			"name": "featured",
+			"description": "Whether the license should be featured on the main page (defaults to false)",
+			"required": false
+		},
+		{
+			"name": "hidden",
+			"description": "Whether the license is neither [popular](https://opensource.org/licenses) nor fills out the [spectrum of licenses](https://choosealicense.com/licenses/) from strongly conditional to unconditional (defaults to true)",
+			"required": false
+		},
+		{
+			"name": "nickname",
+			"description": "Customary short name if applicable (e.g, GPLv3)",
+			"required": false
+		},
+		{
+			"name": "note",
+			"description": "Additional information about the licenses",
+			"required": false
+		},
+		{
+			"name": "redirect_from",
+			"description": "Relative path(s) to redirect to the license from, to prevent breaking old URLs",
+			"required": false
+		}
+	],
+	"rules": {
+		"permissions": [
+			{
+				"description": "This software and derivatives may be used for commercial purposes.",
+				"label": "Commercial use",
+				"tag": "commercial-use"
+			},
+			{
+				"description": "This software may be modified.",
+				"label": "Modification",
+				"tag": "modifications"
+			},
+			{
+				"description": "This software may be distributed.",
+				"label": "Distribution",
+				"tag": "distribution"
+			},
+			{
+				"description": "This software may be used and modified in private.",
+				"label": "Private use",
+				"tag": "private-use"
+			},
+			{
+				"description": "This license provides an express grant of patent rights from contributors.",
+				"label": "Patent use",
+				"tag": "patent-use"
+			}
+		],
+		"conditions": [
+			{
+				"description": "A copy of the license and copyright notice must be included with the software.",
+				"label": "License and copyright notice",
+				"tag": "include-copyright"
+			},
+			{
+				"description": "Changes made to the code must be documented.",
+				"label": "State changes",
+				"tag": "document-changes"
+			},
+			{
+				"description": "Source code must be made available when the software is distributed.",
+				"label": "Disclose source",
+				"tag": "disclose-source"
+			},
+			{
+				"description": "Users who interact with the software via network are given the right to receive a copy of the source code.",
+				"label": "Network use is distribution",
+				"tag": "network-use-disclose"
+			},
+			{
+				"description": "Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used.",
+				"label": "Same license",
+				"tag": "same-license"
+			},
+			{
+				"description": "Modifications of existing files must be released under the same license when distributing the software. In some cases a similar or related license may be used.",
+				"label": "Same license (file)",
+				"tag": "same-license--file"
+			},
+			{
+				"description": "Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used, or this condition may not apply to works that use the software as a library.",
+				"label": "Same license (library)",
+				"tag": "same-license--library"
+			}
+		],
+		"limitations": [
+			{
+				"description": "This license explicitly states that it does NOT grant trademark rights, even though licenses without such a statement probably do not grant any implicit trademark rights.",
+				"label": "Trademark use",
+				"tag": "trademark-use"
+			},
+			{
+				"description": "This license includes a limitation of liability.",
+				"label": "Liability",
+				"tag": "liability"
+			},
+			{
+				"description": "This license explicitly states that it does NOT grant any rights in the patents of contributors.",
+				"label": "Patent use",
+				"tag": "patent-use"
+			},
+			{
+				"description": "The license explicitly states that it does NOT provide any warranty.",
+				"label": "Warranty",
+				"tag": "warranty"
+			}
+		]
+	}
+}
