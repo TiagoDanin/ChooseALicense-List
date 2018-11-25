@@ -1,4 +1,5 @@
 var list = require('./licenses.json')
+list.license = list
 list.find = (id) => {
 	if (typeof id !== 'string') {
 		throw new TypeError('Expected a string');

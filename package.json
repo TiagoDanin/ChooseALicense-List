@@ -1,33 +1,45 @@
 {
   "name": "choosealicense-list",
-  "version": "1.0.0",
-  "description": "List of licenses from choosealicense.com",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "js-yaml": "3.12.0"
+  "version": "1.1.0",
+  "description": "List of licenses from choosealicense.com",
+  "author": {
+    "name": "TiagoDanin",
+    "email": "TiagoDanin@outlook.com",
+    "url": "https://TiagoDanin.github.io"
   },
+  "license": "MIT",
+  "keywords": [
+    "license",
+    "licenses",
+    "mit",
+    "list",
+    "open source",
+    "choosealicense",
+    "spdx"
+  ],
   "scripts": {
     "test": "node test.js",
     "build": "node build.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TiagoDanin/ChooseALicense-List.git"
+  "private": false,
+  "repository": "https://github.com/TiagoDanin/ChooseALicense-List.git",
+  "homepage": "https://github.com/TiagoDanin/ChooseALicense-List#readme",
+  "bugs": "https://github.com/TiagoDanin/ChooseALicense-List/issues",
+  "github": {
+    "name": "ChooseALicense-List",
+    "owner": "TiagoDanin"
   },
-  "keywords": [
-      "license",
-      "licenses",
-      "mit",
-      "list",
-      "open source",
-      "choosealicense",
-      "spdx"
+  "files": [
+    "LICENSE",
+    "README.md",
+    "data.json",
+    "index.js",
+    "licenses.json",
+    "package.json"
   ],
-  "author": "TiagoDanin <TiagoDanin@outlook.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/TiagoDanin/ChooseALicense-List/issues"
-  },
-  "homepage": "https://github.com/TiagoDanin/ChooseALicense-List#readme"
+  "dependencies": {},
+  "devDependencies": {
+    "js-yaml": "3.12.0"
+  }
 }
