@@ -19,6 +19,7 @@
     "spdx"
   ],
   "scripts": {
+    "start": "node index.js",
     "test": "node test.js",
     "build": "node build.js"
   },
@@ -41,5 +42,23 @@
   "dependencies": {},
   "devDependencies": {
     "js-yaml": "3.13.1"
-  }
+  },
+  "related": [
+    "spdx-license-list"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "thanks": [
+    {
+      "name": "sindresorhus",
+      "url": "https://www.npmjs.com/package/spdx-license-list",
+      "description": "Inspiration in spdx-license-list"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/github/choosealicense.com",
+      "description": "Folder **choosealicense** is a submodule of github/choosealicense.com"
+    }
+  ]
 }

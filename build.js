@@ -1,7 +1,7 @@
 const fs = require('fs')
 const yaml = require('js-yaml')
 
-console.time('build')
+console.time('build in')
 const licenseFiles = fs.readdirSync('./choosealicense/_licenses/')
 const dataFiles = fs.readdirSync('./choosealicense/_data/')
 
@@ -46,4 +46,4 @@ for (var file of dataFiles) {
 }
 fs.writeFileSync('data.json', JSON.stringify(data, null, '\t'))
 
-console.timeEnd('build')
+console.timeEnd('build in')

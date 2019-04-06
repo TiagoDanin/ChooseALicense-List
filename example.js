@@ -1,30 +1,4 @@
-# ChooseALicense List
-[![Node](https://img.shields.io/node/v/choosealicense-list.svg?style=flat-square)](https://npmjs.org/package/choosealicense-list)
-[![Version](https://img.shields.io/npm/v/choosealicense-list.svg?style=flat-square)](https://npmjs.org/package/choosealicense-list)
-[![Downloads](https://img.shields.io/npm/dt/choosealicense-list.svg?style=flat-square)](https://npmjs.org/package/choosealicense-list)
-[![Travis](https://img.shields.io/travis/TiagoDanin/ChooseALicense-List.svg?branch=master&style=flat-square)](https://travis-ci.org/TiagoDanin/ChooseALicense-List)
-
-List of licenses from choosealicense.com
-
-
-## Installation
-Module available through the
-[npm registry](https://www.npmjs.com/). It can be installed using the
-[`npm`](https://docs.npmjs.com/getting-started/installing-npm-packages-locally)
-or
-[`yarn`](https://yarnpkg.com/en/)
-command line tools.
-
-```sh
-# NPM
-npm install choosealicense-list --save
-# Or Using Yarn
-yarn add choosealicense-list
-```
-
-## Usage
-```js
-const choosealicenseList = require("choosealicense-list")
+const choosealicenseList = require('./')
 
 //choosealicenseList['spdx-id'] or choosealicense.find('spdx-id')
 choosealicenseList.MIT
@@ -76,34 +50,3 @@ choosealicenseList.data.rules.permissions[1]
 	tag: 'modifications'
 }
 */
-
-```
-
-## Tests
-To run the test suite, first install the dependencies, then run `test`:
-
-```sh
-# NPM
-npm test
-# Or Using Yarn
-yarn test
-```
-
-## Dependencies
-None
-
-## Dev Dependencies
-- [js-yaml](https://ghub.io/js-yaml): YAML 1.2 parser and serializer
-
-## Related
-- [spdx-license-list](https://ghub.io/spdx-license-list): List of SPDX licenses
-
-## Contributors
-Pull requests and stars are always welcome. For bugs and feature requests, please [create an issue](https://github.com/TiagoDanin/ChooseALicense-List/issues). [List of all contributors](https://github.com/TiagoDanin/ChooseALicense-List/graphs/contributors).
-
-## Thanks
-- [sindresorhus](https://www.npmjs.com/package/spdx-license-list): Inspiration in spdx-license-list
-- [github](https://github.com/github/choosealicense.com): Folder **choosealicense** is a submodule of github/choosealicense.com
-
-## License
-[MIT](LICENSE) © [TiagoDanin](https://TiagoDanin.github.io)
