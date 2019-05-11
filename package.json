@@ -1,64 +1,64 @@
 {
-  "name": "choosealicense-list",
-  "main": "index.js",
-  "version": "1.1.1",
-  "description": "List of licenses from choosealicense.com",
-  "author": {
-    "name": "TiagoDanin",
-    "email": "TiagoDanin@outlook.com",
-    "url": "https://TiagoDanin.github.io"
-  },
-  "license": "MIT",
-  "keywords": [
-    "license",
-    "licenses",
-    "mit",
-    "list",
-    "open source",
-    "choosealicense",
-    "spdx"
-  ],
-  "scripts": {
-    "start": "node index.js",
-    "test": "node test.js",
-    "build": "node build.js"
-  },
-  "private": false,
-  "repository": "https://github.com/TiagoDanin/ChooseALicense-List.git",
-  "homepage": "https://github.com/TiagoDanin/ChooseALicense-List#readme",
-  "bugs": "https://github.com/TiagoDanin/ChooseALicense-List/issues",
-  "github": {
-    "name": "ChooseALicense-List",
-    "owner": "TiagoDanin"
-  },
-  "files": [
-    "LICENSE",
-    "README.md",
-    "data.json",
-    "index.js",
-    "licenses.json",
-    "package.json"
-  ],
-  "dependencies": {},
-  "devDependencies": {
-    "js-yaml": "3.13.1"
-  },
-  "related": [
-    "spdx-license-list"
-  ],
-  "engines": {
-    "node": ">=8"
-  },
-  "thanks": [
-    {
-      "name": "sindresorhus",
-      "url": "https://www.npmjs.com/package/spdx-license-list",
-      "description": "Inspiration in spdx-license-list"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/github/choosealicense.com",
-      "description": "Folder **choosealicense** is a submodule of github/choosealicense.com"
-    }
-  ]
+	"name": "choosealicense-list",
+	"main": "index.js",
+	"version": "1.1.1",
+	"description": "List of licenses from choosealicense.com",
+	"author": {
+		"name": "TiagoDanin",
+		"email": "TiagoDanin@outlook.com",
+		"url": "https://TiagoDanin.github.io"
+	},
+	"license": "MIT",
+	"keywords": [
+		"license",
+		"licenses",
+		"mit",
+		"list",
+		"open source",
+		"choosealicense",
+		"spdx"
+	],
+	"scripts": {
+		"start": "node index.js",
+		"test": "node test.js",
+		"build": "node build.js"
+	},
+	"private": false,
+	"repository": "https://github.com/TiagoDanin/ChooseALicense-List.git",
+	"homepage": "https://github.com/TiagoDanin/ChooseALicense-List#readme",
+	"bugs": "https://github.com/TiagoDanin/ChooseALicense-List/issues",
+	"github": {
+		"name": "ChooseALicense-List",
+		"owner": "TiagoDanin"
+	},
+	"files": [
+		"LICENSE",
+		"README.md",
+		"data.json",
+		"index.js",
+		"licenses.json",
+		"package.json"
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"js-yaml": "3.13.1"
+	},
+	"related": [
+		"spdx-license-list"
+	],
+	"engines": {
+		"node": ">=8"
+	},
+	"thanks": [
+		{
+			"name": "sindresorhus",
+			"url": "https://www.npmjs.com/package/spdx-license-list",
+			"description": "Inspiration in spdx-license-list"
+		},
+		{
+			"name": "github",
+			"url": "https://github.com/github/choosealicense.com",
+			"description": "Folder **choosealicense** is a submodule of github/choosealicense.com"
+		}
+	]
 }
