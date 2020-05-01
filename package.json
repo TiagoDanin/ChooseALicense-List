@@ -20,8 +20,9 @@
 	],
 	"scripts": {
 		"start": "node index.js",
-		"test": "node test.js",
-		"build": "node build.js"
+		"test": "xo && node test.js",
+		"build": "git submodule update --init --recursive && node build.js",
+		"lint": "xo"
 	},
 	"private": false,
 	"repository": "https://github.com/TiagoDanin/ChooseALicense-List.git",
@@ -41,13 +42,14 @@
 	],
 	"dependencies": {},
 	"devDependencies": {
-		"js-yaml": "3.13.1"
+		"js-yaml": "3.13.1",
+		"xo": "^0.30.0"
 	},
 	"related": [
 		"spdx-license-list"
 	],
 	"engines": {
-		"node": ">=8"
+		"node": ">=10"
 	},
 	"thanks": [
 		{
@@ -60,5 +62,12 @@
 			"url": "https://github.com/github/choosealicense.com",
 			"description": "Folder **choosealicense** is a submodule of github/choosealicense.com"
 		}
-	]
+	],
+	"xo": {
+		"semicolon": false,
+		"ignores": [
+			"choosealicense/"
+		]
+	}
+	
 }

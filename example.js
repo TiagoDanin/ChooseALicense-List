@@ -1,6 +1,7 @@
-const choosealicenseList = require('./')
+/* eslint-disable no-unused-expressions */
+const choosealicenseList = require('.')
 
-//choosealicenseList['spdx-id'] or choosealicense.find('spdx-id')
+// ChoosealicenseList['spdx-id'] or choosealicense.find('spdx-id')
 choosealicenseList.MIT
 /*
 -> {

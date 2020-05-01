@@ -5,19 +5,18 @@ console.time('build in')
 const licenseFiles = fs.readdirSync('./choosealicense/_licenses/')
 const dataFiles = fs.readdirSync('./choosealicense/_data/')
 
-var licenses = {}
-for (var file of licenseFiles) {
+const licenses = {}
+for (const file of licenseFiles) {
 	console.log('File:', file)
-	var text = fs.readFileSync(`choosealicense/_licenses/${file}`).toString()
-	var match = text.match(/---[\n]*(.*)[\n]*[\n]---[\n][\n]*(.*)[\n]*[\n]*/s)
-	var data = yaml.safeLoad(match[1])
-	var id = data['spdx-id']
-	var license = match[2]
+	const text = fs.readFileSync(`choosealicense/_licenses/${file}`).toString()
+	const match = text.match(/-{3}\n*(.*)\n+-{3}\n+(.*)\n*/s)
+	const data = yaml.safeLoad(match[1])
+	const id = data['spdx-id']
+	const license = match[2]
 	licenses[id] = {
 		title: data.title,
-		id: id,
+		id,
 		description: '',
-		using: [],
 		permissions: [],
 		conditions: [],
 		limitations: [],
@@ -25,25 +24,28 @@ for (var file of licenseFiles) {
 		hidden: true,
 		nickname: null,
 		note: '',
-		redirect_from: '',
+		redirect_from: '', // eslint-disable-line camelcase
 		urls: {
 			github: `https://api.github.com/licenses/${id}`,
 			choosealicense: `https://choosealicense.com/licenses/${id}`,
 			opensource: `https://www.opensource.org/licenses/${id}`
 		},
 		...data,
-		using: data.using == null ? [] : data.using,
+		redirectFrom: data.redirect_from,
+		using: data.using === null ? [] : data.using,
 		body: license
 	}
 }
+
 fs.writeFileSync('licenses.json', JSON.stringify(licenses, null, '\t'))
 
-var data = {}
-for (var file of dataFiles) {
+const data = {}
+for (const file of dataFiles) {
 	console.log('File:', file)
-	var text = fs.readFileSync(`choosealicense/_data/${file}`).toString()
+	const text = fs.readFileSync(`choosealicense/_data/${file}`).toString()
 	data[file.match(/(\w*).yml/)[1]] = yaml.safeLoad(text)
 }
+
 fs.writeFileSync('data.json', JSON.stringify(data, null, '\t'))
 
 console.timeEnd('build in')
