@@ -82,26 +82,19 @@ baseURL: https://tiagodanin.github.io
 
 <div class="uk-container">
 	<h1 id="choosealicense-list"><a href="#choosealicense-list">ChooseALicense List</a></h1>
-<p><a href="https://npmjs.org/package/choosealicense-list"><img src="https://img.shields.io/node/v/choosealicense-list.svg?style=flat-square" alt="Node"></a>
-<a href="https://npmjs.org/package/choosealicense-list"><img src="https://img.shields.io/npm/v/choosealicense-list.svg?style=flat-square" alt="Version"></a>
-<a href="https://npmjs.org/package/choosealicense-list"><img src="https://img.shields.io/npm/dt/choosealicense-list.svg?style=flat-square" alt="Downloads"></a>
-<a href="https://travis-ci.org/TiagoDanin/ChooseALicense-List"><img src="https://img.shields.io/travis/TiagoDanin/ChooseALicense-List.svg?branch=master&#x26;style=flat-square" alt="Travis"></a></p>
+<p><a href="https://travis-ci.org/TiagoDanin/ChooseALicense-List"><img src="https://img.shields.io/travis/TiagoDanin/ChooseALicense-List.svg?branch=master&#x26;style=flat-square" alt="Travis"></a> <a href="https://github.com/xojs/xo"><img src="https://img.shields.io/badge/code%20style-XO-red.svg?style=flat-square" alt="XO code style"></a> <a href="https://npmjs.org/package/choosealicense-list"><img src="https://img.shields.io/node/v/choosealicense-list.svg?style=flat-square" alt="Node"></a> <a href="https://npmjs.org/package/choosealicense-list"><img src="https://img.shields.io/npm/v/choosealicense-list.svg?style=flat-square" alt="Version"></a> <a href="https://npmjs.org/package/choosealicense-list"><img src="https://img.shields.io/npm/dt/choosealicense-list.svg?style=flat-square" alt="Downloads"></a> </p>
 <p>List of licenses from choosealicense.com</p>
 <h2 id="installation"><a href="#installation">Installation</a></h2>
-<p>Module available through the
-<a href="https://www.npmjs.com/">npm registry</a>. It can be installed using the
-<a href="https://docs.npmjs.com/getting-started/installing-npm-packages-locally"><code>npm</code></a>
-or
-<a href="https://yarnpkg.com/en/"><code>yarn</code></a>
-command line tools.</p>
+<p>Module available through the <a href="https://www.npmjs.com/">npm registry</a>. It can be installed using the  <a href="https://docs.npmjs.com/getting-started/installing-npm-packages-locally"><code>npm</code></a> or <a href="https://yarnpkg.com/en/"><code>yarn</code></a> command line tools.</p>
 <pre><code class="hljs language-sh"><span class="hljs-comment"># NPM</span>
 npm install choosealicense-list --save
 <span class="hljs-comment"># Or Using Yarn</span>
 yarn add choosealicense-list</code></pre>
-<h2 id="usage"><a href="#usage">Usage</a></h2>
-<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> choosealicenseList = <span class="hljs-built_in">require</span>(<span class="hljs-string">"choosealicense-list"</span>)
+<h2 id="example"><a href="#example">Example</a></h2>
+<pre><code class="hljs language-js"><span class="hljs-comment">/* eslint-disable no-unused-expressions */</span>
+<span class="hljs-keyword">const</span> choosealicenseList = <span class="hljs-built_in">require</span>(<span class="hljs-string">'choosealicense-list'</span>)
 
-<span class="hljs-comment">//choosealicenseList['spdx-id'] or choosealicense.find('spdx-id')</span>
+<span class="hljs-comment">// ChoosealicenseList['spdx-id'] or choosealicense.find('spdx-id')</span>
 choosealicenseList.MIT
 <span class="hljs-comment">/*
 -> {
@@ -162,6 +155,7 @@ yarn <span class="hljs-built_in">test</span></code></pre>
 <h2 id="dev-dependencies"><a href="#dev-dependencies">Dev Dependencies</a></h2>
 <ul>
 <li><a href="https://ghub.io/js-yaml">js-yaml</a>: YAML 1.2 parser and serializer</li>
+<li><a href="https://ghub.io/xo">xo</a>: JavaScript/TypeScript linter with great defaults</li>
 </ul>
 <h2 id="related"><a href="#related">Related</a></h2>
 <ul>
