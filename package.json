@@ -43,7 +43,7 @@
 	"dependencies": {},
 	"devDependencies": {
 		"js-yaml": "3.14.0",
-		"xo": "^0.33.0"
+		"xo": "^0.33.1"
 	},
 	"related": [
 		"spdx-license-list"
