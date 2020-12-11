@@ -42,7 +42,7 @@
 	],
 	"dependencies": {},
 	"devDependencies": {
-		"js-yaml": "3.14.0",
+		"js-yaml": "3.14.1",
 		"xo": "^0.33.1"
 	},
 	"related": [
