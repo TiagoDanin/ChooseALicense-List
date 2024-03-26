@@ -49,7 +49,7 @@
 		"spdx-license-list"
 	],
 	"engines": {
-		"node": ">=v14.16.1"
+		"node": ">=20.12.0"
 	},
 	"thanks": [
 		{
